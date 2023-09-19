@@ -1,0 +1,374 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Dat",
+				"DataTypes\tabc"
+			],
+			[
+				"val",
+				"value\tabc"
+			],
+			[
+				"req",
+				"require\t(index.js)"
+			],
+			[
+				"regis",
+				"registerUser\t(API_Route.js)"
+			],
+			[
+				"conso",
+				"console.log\t(index.js)"
+			],
+			[
+				"cl",
+				"column\tflex-direction"
+			],
+			[
+				"useSta",
+				"useState\tabc"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"li",
+				"li-active"
+			],
+			[
+				"pa",
+				"placeholder\tAttr"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"t",
+				"trackProgress"
+			],
+			[
+				"u",
+				"uppercase\ttext-transform"
+			],
+			[
+				"get",
+				"getItem"
+			],
+			[
+				"ps",
+				"position\tproperty"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"fl",
+				"flex-direction\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ba",
+				"Set Syntax: JavaScript (Babel)"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 184.0,
+		"history":
+		[
+			"print(\"hello\")",
+			"cls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Routes/ChatRoute.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/app.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/conversationModel.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/FriendModel.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/api/converationAPI.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/index.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Controllers/FriendController.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/db.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/api/authAPI.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/api/messageAPI.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/screens/PostScreen.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/hooks/useAuth.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/screens/LogReg.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/App.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/utils/ProtectLogin.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/utils/ProtectedRoute.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/index.css",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Controllers/chatControllers.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/hooks/useLocalStorage.jsx",
+		"/C/Users/JAY/Desktop/Small-html-project/My Website/style.css",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/context/userContext.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/node_modules/acorn/dist/acorn.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/hooks/useAuth.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/utils/API_Route.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Controllers/authControllers.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/seeds.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Routes/FriendRoute.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/screens/ChatScreen.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/UserModel.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/MessageModel.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/modelsTest.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Routes/MessageRoute.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/index.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/package.json",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Routes/AuthRoute.js",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/src/main.jsx",
+		"/C/Users/JAY/Desktop/my-memoriex/memoriex/tailwind.config.js",
+		"/C/Users/JAY/Desktop/my-memoriex/server/api/Models/model.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/node_modules/@firebase/logger/dist/index.cjs.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/Screens/PlayGame.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/ChatButton.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/hooks/useLocalStorage.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/friendsList.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/friendsCard.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/Screens/GameOptions.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/styles.module.css",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/App.css",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/App.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/hooks/useSocket.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/addFriendModal.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/node_modules/@firebase/database/dist/index.standalone.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/LoadingScreen.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/main.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/context/context.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/navbar.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/package.json",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/gameStatus.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/hooks/useSocket.jsx",
+		"/C/Users/JAY/Desktop/GLF/server/index.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/header.jsx",
+		"/C/Users/JAY/Desktop/Learn-vue-jay/src/App.vue",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/Screens/Home.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/hooks/useAuth.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/node_modules/react-dom/cjs/react-dom.profiling.min.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/node_modules/.vite/deps/react-dom_client.js",
+		"/C/Users/JAY/Desktop/Small-html-project/web_x_and_o/main.js",
+		"/C/Users/JAY/Desktop/GLF/server/models/UserModel.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/node_modules/core-js/features/weak-map/from.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/node_modules/@firebase/database-compat/dist/index.standalone.js",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/index.html",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/ChooseGameF.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/footer.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/components/ChooseGameH.jsx",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/hooks/useSendMail.jsx",
+		"/C/Many_Downloads_Windows/Users/joshuaboy/Desktop/Application Packages/kuku/real.py",
+		"/C/Many_Downloads_Windows/Users/joshuaboy/Desktop/Application Packages/small mega/zac/atm.py",
+		"/C/Users/JAY/Desktop/GLF/Game-Lobby/src/Screens/NotFound.jsx",
+		"/C/Users/JAY/Desktop/GLF/server/package.json",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/header.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/feedback.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/Screens/logReg.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/Screens/HomeScreen.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/utils.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/App.css",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/messageBox.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/Screens/MessageScreen.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/Screens/sendRecv.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/nav.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/profileFooter.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/sendmsg.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/hooks/useAuth.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/hooks/useMessges.js",
+		"/C/Users/JAY/Desktop/vite-react/backend/api/api.js",
+		"/C/Users/JAY/Desktop/vite-react/backend/api/models.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/package.json",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/main.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/Screens/ProfileScreen.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/helper/protected_route.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/helper/protect_login.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/hooks/useAuth.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/helper/context.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/node_modules/@babel/parser/lib/index.js",
+		"/C/Users/JAY/Desktop/vite-react/backend/node_modules/flush-write-stream/node_modules/safe-buffer/index.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/helper/context.js",
+		"/C/Users/JAY/Desktop/vite-react/backend/node_modules/json5/lib/parse.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/footer.jsx",
+		"/C/Users/JAY/Desktop/my-vercel-html-test/vercel.json",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/login.jsx",
+		"/C/Users/JAY/Desktop/vite-react/backend/index.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/node_modules/vite/dist/node/chunks/dep-e72d45e1.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/node_modules/axios/dist/axios.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/index.html",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/utility.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/styles.css",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/App.jsx",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/colors.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/header.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/nav.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/feedback.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/styles.css",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/components/utility.js",
+		"/C/Users/JAY/Desktop/vite-react/check-up-app/src/index.css",
+		"/C/Users/JAY/Desktop/my-vercel-html-test/static/index.html",
+		"/C/Users/JAY/Desktop/my-vercel-html-test/view/index.ejs",
+		"/C/Users/JAY/Desktop/my-vercel-html-test/package.json",
+		"/C/Users/JAY/Desktop/my-vercel-html-test/.gitignore",
+		"/C/Users/JAY/Desktop/express-vercel/api/pk.js",
+		"/C/Users/JAY/Desktop/check-up-app/server.js"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 112.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "tfiy.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
