@@ -10,10 +10,10 @@ import { MdEvent as Event, MdSettings as Setting } from 'react-icons/md'
 export default function Utilities({Settings}) {
 
 	const utilsDetails = [
-				{name:"Profile", to:"profile",icon:<User fill='rgba(1,1,1,0.7)' />},
-				{name:"Event", to:"event", icon:<Event fill='rgba(1,1,1,0.7)'/>},
-				{name:"Settings", action:Settings, icon:<Setting fill='rgba(1,1,1,0.7)'/>},
-				{name:"LogOut", to:"Accounts", icon:<LogOut />}
+				{name:"Profile", to:"profile",icon:<User className="text-green-400 text-lg"/>},
+				{name:"Event", to:"event", icon:<Event className="text-yellow-400 text-xl"/>},
+				{name:"Settings", action:Settings, icon:<Setting className="text-sky-400 text-xl"/>},
+				{name:"LogOut", to:"Accounts", icon:<LogOut className="text-red-400 text-xl"/>}
 	]
 	const scrollbar = `${window.innerWidth>400 ? 'scrollbar scrollbar-thin dark:scrollbar-track-gray-600 cursor-pointer  dark:hover:scrollbar-thumb-gray-500 scrollbar-track-gray-50 hover:scrollbar-thumb-gray-400': ""} `
 	
@@ -29,7 +29,7 @@ export default function Utilities({Settings}) {
 
 				</div>
 
-				<div className="w-[93%] dark:bg-gray-500 my-1 bg-gray-100 flex flex-col justify-between space-y-4 px-2 py-3 rounded-md">
+				<div className="w-[93%] dark:bg-gray-00 my-1 bg-gray-5 flex flex-col justify-between gap-y-3  pb-3 rounded-md">
 					{
 						utilsDetails.map((item,idx)=> <UtilsCard key={idx} icon={item.icon} name={item.name} to={item?.to} action={item?.action} /> )
 					}

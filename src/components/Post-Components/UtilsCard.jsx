@@ -37,7 +37,7 @@ export default function UtilsCard({icon,name,to,action}) {
 
 
 	return (
-		<div onClick={runAction} className="flex space-x-3 items-center">
+		<div onClick={runAction} className="flex gap-x-3 px-2 py-3 rounded bg-gray-00 hover:bg-gray-100 hover:dark:bg-gray-600 items-center">
 			{icon} <p className="dark:text-gray-100 text-gray-800">{name}</p>
 		</div>
 	)

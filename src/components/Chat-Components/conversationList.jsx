@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Conversation from './conversation.jsx'
 import { useNavigate } from 'react-router-dom'
 import { getUser } from '../../service/userService.js'
-import { BiSearch as SearchIcon  } from 'react-icons/bi'
+import { BiSearch as SearchIcon, BiArrowBack as Back } from 'react-icons/bi'
 import { conversationLastMessage } from '../../service/messageService.js'
 
 
@@ -61,18 +61,20 @@ export default function conversationList({data,mainUser}) {
 
 			<div className='grid grid-rows-5 w-full pt-3 grid-cols-1'>
 
-				<div className="flex w-full row-span-1 dark:bg-gray-400 bg-white mx-1 px-3 py-2 items-center h-14 justify-start rounded-full ">
-					<SearchIcon className="text-green-400  text-2xl"/>
+			{/* Search */}
+				<div className="flex w-full row-span-1 dark:bg-gray-400 bg-white mx-1 px-3 py-2 items-center h-14 justify-start rounded-2xl ">
+					<Back onClick={()=>navigate('/')} className="cursor-pointer bg-green-200 h-full dark:text-gray-600 font-bold text-4xl px-2 py-1 rounded-md text-gray-700"/>
 					<input className="dark:placeholder-gray-100 focus:outline-none w-full bg-transparent rounded mx-1 text-sm md:text-lg"
 						type="text" 
 						placeholder="Search"
 						value={searchValue} 
 						onChange={({target})=>setSearchValue(target.value)}	
 					/>
-					<button onClick={()=>navigate('/')} className="bg-green-300 h-full dark:text-gray-600 font-bold px-2 py-1 rounded-md text-gray-800">Home</button>
+					<SearchIcon className="text-green-400  text-2xl"/>
 				</div>
 
-			{	<div className='bg-white dark:bg-gray-600 h-[72vh] row-span-4 mx-3 mt-3 rounded-md px-2 py-2 items-center overflow-y-scroll '>
+			{/* Body */}
+				{<div className='bg-white dark:bg-gray-600 h-[72vh] row-span-4 mx-1 mt-3 rounded-md px-2 py-2 items-center overflow-y-auto '>
 					
 					{ conversation ?
 

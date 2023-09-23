@@ -41,9 +41,9 @@ export default function StoryContainer({action1,action2}) {
 		console.log("Stories From Slice : ",otherStories)
 	}, [])
 
-	const OTH = otherStories[0] && otherStories?.map(item => item)
+	// const OTH = otherStories[0] && otherStories?.map(item => item)
 
-	console.log("This is my OTH :",OTH)
+	// console.log("This is my OTH :",OTH)
 
 
 
@@ -63,11 +63,9 @@ export default function StoryContainer({action1,action2}) {
 			{/*{ console.log("This stories na for friends", Object.keys(Stories[0] ||  {}))}
 */}
 
-			{otherStories[0] && !isLoading &&
-				otherStories?.map((item,idx) => { 
-					{/*{const userKey = Object.keys(item)}
-					{console.log("This key ::",userKey)}*/}
-					<StoryCard action2={action2} name="Emma" img="" />	
+			{otherStories && !isLoading &&
+				otherStories || [] ?.map((item,idx) => { 
+					<StoryCard action2={action2} name={'Name'} img="" />	
 				})				
 			}
 	

@@ -17,7 +17,7 @@ export default function MainPostContainer({toggleViewPost,toggleViewStoryBox,tog
 	const contRef = useRef(null)
 	const dispatch = useDispatch()
 	const {setHideNav} = useContext(NavHide)
-	const { userPost } = useSelector( state => state.post)
+	const { userPost } = useSelector( state => state.post ? state.post : [])
 	const [loading,setLoading] = useState(false)
 	const { user } = useSelector(state => state.auth)
 	const [showPostModal,setShowPostModal] = useState(false)
@@ -56,8 +56,8 @@ export default function MainPostContainer({toggleViewPost,toggleViewStoryBox,tog
 
 				<StoryContainer action1={toggleAddStory} action2={toggleViewStoryBox}/>
  
-				{userPost ? 
-					(userPost?.map(
+				{userPost && userPost ? 
+					(userPost || []?.map(
 						(post,idx) => <PostCard PCRef={contRef} toggleViewPost={toggleViewPost} userId={user?.id} PostId={post?.id} text={post.text}
 						 postUserId={post.UserId} imgUrl={post?.imageUrl} reactions={post.Reactions} comments={post.Comments} key={idx}
 						 feeling={post.feeling} />

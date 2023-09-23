@@ -111,6 +111,8 @@ export default function PostCard({FullView,PCRef,toggleViewPost,
 
 	async function deleteIt () { 
 		//  update local state 
+		var sure = confirm("Are you sure you want to delete this post ?")
+		if (!sure) return 
 		const Updated = userPost.filter((post) => post.id != PostId)
 		console.log("Post Don Update : ",Updated)
 		dispatch(updatePosts(Updated))
@@ -129,8 +131,8 @@ export default function PostCard({FullView,PCRef,toggleViewPost,
 				</div>
 
 				<div className="cursor-default ml-2">
-					<p onClick={openUserProfile} className="text-sm">{ownerName} &nbsp;{getFeeling(feeling)}</p>
-					<p className="text-xs font-light">12 Jun 2022</p>
+					<p onClick={openUserProfile} className="flex font-light"><p className="text-md capitalize font-bold">{ownerName}</p> &nbsp;{getFeeling(feeling)}</p>
+					<p className="text-xs font-extralight">12 Jun 2022</p>
 				</div>
 
 				<div className='absolute top-1 right-2'>{!FullView && myOwn() ? <Trash onClick={deleteIt} className="p-1 dark:text-gray-100 bg-gray-200 rounded-md dark:bg-gray-500 text-xl text-gray-900 hover:text-red-500 dark:hover:text-red-500"/> : "" }</div>
@@ -140,7 +142,7 @@ export default function PostCard({FullView,PCRef,toggleViewPost,
 
 			{/* 2nd Post Section */}
 			{ text ?
-			<div className="border-none cursor-default w-full pb-1 pt-2 text-sm font-extralight dark:bg-gray-800 px-1">
+			<div className="border-none cursor-default w-full pb-1 pt-2 text-sm font-light dark:bg-gray-800 px-1">
 				<p onClick={CloseReactionBox_OpenPost}> {text} </p>
 			</div> : ''}
 			
@@ -164,11 +166,11 @@ export default function PostCard({FullView,PCRef,toggleViewPost,
 			{ openReactions ? 
 				
 				<div className="flex justify-around items-center absolute  rounded-md border-2 dark:border-gray-400 border-gray-200 dark:bg-gray-600 bg-gray-50 h-24 right-10 bottom-14 left-10">	
-					<div onClick={()=> handleReaction('Like',true)} className="bg-blue-500 p-2 rounded-full text-white"> <Like/></div>
-					<div onClick={()=> handleReaction('Love',true)} className="bg-red-500 p-2 rounded-full text-white"> <Loves/></div>
-					<div onClick={()=> handleReaction('Happy',true)} className="bg-yellow-400 p-2 rounded-full text-white"> <Happy/></div>
-					<div onClick={()=> handleReaction('Sad',true)} className="bg-pink-500 p-2 rounded-full text-white"> <Sad/></div>
-					<div onClick={()=> handleReaction('Angry',true)} className="bg-orange-500 p-2 rounded-full text-white"> <Angry/></div>
+					<div onClick={()=> handleReaction('Like',true)} className=" flex justify-center items-center bg-blue-500 p-[2px] rounded-full text-white"> <Like className="text-2xl"/></div>
+					<div onClick={()=> handleReaction('Love',true)} className=" flex justify-center items-center bg-red-500 p-[2px] rounded-full text-white"> <Loves className="text-2xl"/></div>
+					<div onClick={()=> handleReaction('Happy',true)} className=" flex justify-center items-center bg-yellow-400 p-[2px] rounded-full text-white"> <Happy className="text-2xl"/></div>
+					<div onClick={()=> handleReaction('Sad',true)} className=" flex justify-center items-center bg-pink-500 p-[2px] rounded-full text-white"> <Sad  className="text-2xl"/></div>
+					<div onClick={()=> handleReaction('Angry',true)} className=" flex justify-center items-center bg-orange-500 p-[2px] rounded-full text-white"> <Angry className="text-2xl"/></div>
 
 				</div> : "" 
 			}

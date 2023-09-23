@@ -80,16 +80,24 @@ export default function LogReg() {
 
 	return (
 
-		<div className="logreg-form h-[140vh] flex font-[Popi]  flex-col border-green-300 border-b-0 border-2 dark:bg-gray-900">
+		<div className="logreg-form min-h-screen flex flex-col border-green-300 dark:bg-gray-900">
 
-			<h2 className="mt-9 text-center font-bold text-4xl text-gray-700 dark:text-gray-50">Memoriex</h2>
-
-			<div className=" flex justify-evenly mx-auto mt-[4rem] mb-[2.5rem] w-full dark:text-gray-50">
+			<h1 className="font-black mt-4 mx-auto w-[350px] text-5xl text-gray-700 dark:text-gray-50">Memoriex</h1>
+ 
+			{/*<div className=" flex justify-evenly mx-auto mt-[4rem] mb-[2.5rem] w-full dark:text-gray-50">
 				<button className={loginState ? 'logreg-Btn' :'logreg-Btn-active'}
 					onClick={()=>setLoginState(false)}>Login</button>
 
 				<button className={!loginState ? 'logreg-Btn' :'logreg-Btn-active'}
 					onClick={()=>setLoginState(true)}>Register</button>
+			</div>*/}
+
+			<div className="bg-red-00 w-[350px] flex flex-col gap-y-2 items-start mx-auto">
+				<h2 className="mt-8 text-center font-semibold text-2xl text-black">Welcome back to memoriex </h2>
+				<div className="flex gap-x-2 items-center "> 
+					<p className="font-light">{!loginState ? 'New here' : 'Already have an account'} ?</p> <a onClick={() => setLoginState(prev => !prev)} className="text-sky-500 underline w-auto">
+						{!loginState ? 'Create an account' : 'Login'}
+				</a></div>
 			</div>
 
 			<form className="flex flex-col m-[2rem] mx-auto " onSubmit={handleSubmit}>
@@ -125,7 +133,12 @@ export default function LogReg() {
 				/>
 				
 
-				<button className="--submit transition-all" type="submit"> { isLoading ? <div className="spinner"></div>  : !loginState ? "Login" : "Register"} </button>
+						<button className=" bg-sky-300 py-4 text-xl font-bold rounded transition-all w-[350px]" type="submit"> { isLoading 
+							? (<div className="flex gap-x-2 items-center mx-auto w-full justify-center">
+									<p>{!loginState ? "Login" : "Register"} </p>
+									<div className="spinner"></div>
+								</div>)
+							: !loginState ? "Login" : "Register"} </button>
 			</form>
 			<p onClick={forgotPassword} className="cursor-pointer underline dark:text-white text-center mx-auto"> Forgotten Password</p>
 			<p onClick={() => navigate('/Accounts')} className="cursor-pointer underline text-center mx-auto text-gray-900 dark:text-blue-500">All Accounts</p>

@@ -61,16 +61,17 @@ export default function Navbar({changeScreen,onSettings,onSearch}) {
 	}
 
 	return (
-		<div className={`${hideNav?'hidden':''} dark:bg-gray-900 bg-white md:h-[18vh] h-[13vh] shadow-lg my-auto w-full grid grid-cols-6 grid-rows-1`}>
-			<div className="lg:col-span-1 md:col-span-2 md:flex md:justify-start md:items-center text-xl text-gray-700 font-extrabold pl-2 absolute top-3 md:static dark:text-white "><p className="text-xl md:hidden">Memoriex</p> <p className="text-xl  hidden md:block">memoriex</p> </div>
+		<div className={`${hideNav?'hidden':''} relative dark:bg-gray-900 bg-white md:min-h-[60px] min-h-[70px] shadow-lg my-auto w-full grid grid-cols-6 grid-rows-1`}>
+			
+			<div className="lg:col-span-1 md:col-span-2 md:flex md:justify-start md:items-center text-xl text-gray-700 font-extrabold pl-2 absolute top-1 md:static dark:text-white "><p className="text-xl md:hidden">Memoriex</p> <p className="text-xl  hidden md:block">memoriex</p> </div>
 	
 			<div className="col-span-6 md:col-span-4 h-full flex w-full justify-between md:justify-evenly px-2 items-end  ">
 				{/* Load HomePage Icons */}
 				{ routes.map((route,idx) => <div key={idx} onClick={()=>Choose(route.name)} className={`${select==route.name ? `border-b-4 ${selectColor}`:'text-gray-400'} ${tc}`}>{route.icon}</div> ) } 
 			</div>
 
-		<div className="col-span-1 absolute top-1 right-0 px-2 space-x-3 flex justify-evenly transition-all " >
-				<SearchIcon onClick={()=>onSearch(true)} className="dark:bg-gray-700 dark:text-gray-100 text-gray-800 bg-gray-100 p-[3px] rounded-full text-2xl md:text-3xl lg:text-3xl"/>
+			<div className="transition-all col-span-1 absolute top-1 right-2 px-2 gap-x-3 flex justify-evenly transition-all " >
+				<SearchIcon onClick={()=>onSearch(true)} className="dark:bg-gray-700 dark:text-gray-100 text-gray-800 bg-gray-50 p-[3px] rounded-full text-2xl md:text-3xl lg:text-3xl"/>
 				<Menu onClick={()=>onSettings(true)} className=" dark:text-gray-100 dark:bg-gray-700 text-gray-600 p-[2px] rounded-full text-2xl md:text-3xl lg:text-3xl"/>
 			</div>
 

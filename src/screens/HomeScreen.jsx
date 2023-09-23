@@ -99,7 +99,7 @@ export default function PostScreen() {
 	return (
 		<main className="relative dark:bg-gray-800 bg-white  h-screen w-screen">
 
-			<section className="flex flex-col bg-white grid-rows-6 dark:bg-gray-800 grid-cols-1 w-full h-full">
+			<section className="flex flex-col bg-white grid-rows-6 dark:bg-gray-800 grid-cols-1 w-full h-full overflow-y-auto">
 
 				<NavBar changeScreen={nextScreen} onSettings={showSettings} onSearch={showSearch} />
 

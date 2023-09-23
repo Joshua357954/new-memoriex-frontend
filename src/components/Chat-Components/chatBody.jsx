@@ -157,7 +157,6 @@ export default function chatBody({mainUser}) {
 	}
 
 
-
 	// Ui Render
 	return (
 		<div className={tw.chat_main}>

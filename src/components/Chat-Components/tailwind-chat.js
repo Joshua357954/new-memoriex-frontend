@@ -8,7 +8,7 @@ export const tcss = {
 
 'logreg-form/main':"flex flex-col m-[2rem] mx-auto",
 
-'logreg-form/form/input':"mb-10 px-7 mx-auto py-3 md:w-[350px] w-[250px] border-b-[5px] bg-transparent rounded-b-sm border-gray-700 focus:outline-none",
+'logreg-form/form/input':"mb-10 px-7 mx-auto py-3 md:w-[550px] w-[250px] border-b-[5px] bg-transparent rounded-b-sm border-gray-700 focus:outline-none",
 
 'logreg/Btn':'font-normal', 
 
@@ -16,7 +16,7 @@ export const tcss = {
 
 'log-reg-box' : "flex justify-evenly mx-auto mt-[4rem] mb-[2.5rem] w-full",
 
-"--submit" : "focus:outline-none p-3  mb-5 bg-green-300 w-[110px] font-bold text-gray-700 text-center rounded-md",
+"--submit" : "focus:outline-none p-3  mb-5 bg-green-300 w-[310px] font-bold text-gray-700 text-center rounded-md",
 
 
 /* Login copyright */
