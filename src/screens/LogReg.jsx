@@ -92,7 +92,7 @@ export default function LogReg() {
 					onClick={()=>setLoginState(true)}>Register</button>
 			</div>*/}
 
-			<div className="bg-red-00 w-full md:w-[350px] flex flex-col gap-y-2 items-start">
+			<div className="bg-red-00 w-full md:w-[350px] flex flex-col gap-y-2 items-start mx-auto">
 				<h2 className="mt-8 text-center font-semibold text-2xl text-gray-700">Welcome back to memoriex </h2>
 				<div className="flex gap-x-2 text-center "> 
 					<p className="font-light">{!loginState ? 'New here' : 'Already have an account'} ?</p> <a onClick={() => setLoginState(prev => !prev)} className="text-sky-500 underline w-auto">
