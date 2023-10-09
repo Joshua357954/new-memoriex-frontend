@@ -96,9 +96,9 @@ export default function makePostModal({PREF,action}) {
 	BlockScroll()
 
 	return (
-		<div className=" transition-all absolute top-0 left-0 bottom-0 right-0 dark:bg-gray-800 bg-gray-100 flex flex-col justify-center items-center ">
+		<div className=" transition-all absolute top-0 left-0 bottom-0 right-0 dark:bg-gray-800 bg-gray-50 flex flex-col justify-center items-center ">
 			<div className="relative w-full h-full">
-				<div className="h-14 dark:bg-gray-500 bg-gray-200 px-2  flex justify-between items-center">
+				<div className="h-14 shadow-sm dark:bg-gray-500 bg-gray-50 px-2  flex justify-between items-center">
 					<div className="flex space-x-4">	
 						<MdClose size={20} onClick={()=>closePostModal(true)} className="dark:text-gray-100 text-gray-800"/>
 						<p className="dark:text-gray-100 text-gray-800 focus:outline-none">Create Post</p>
@@ -125,7 +125,7 @@ export default function makePostModal({PREF,action}) {
 
 
 				{/* Post Text */}
-				<textarea className="mx-1 w-[96%] resize-none border-2 mt-2 dark:border-gray-400 border-gray-200 px-1 pt-2 dark:bg-gray-600 dark:text-gray-50 text-gray-700 text-sm bg-gray-100 dark:placeholder-gray-100 placeholder-gray-400 h-32 rounded-sm focus:outline-none"
+				<textarea className="mx-1 w-[96%] resize-none border-2 mt-2 dark:border-gray-400 border-gray-100 px-1 pt-2 dark:bg-gray-600 dark:text-gray-50 text-gray-700 text-sm bg-gray-50 focus:border-gray-200 dark:placeholder-gray-100 placeholder-gray-400 h-32 rounded-sm focus:outline-none"
 				placeholder="What is on your mind ? "
 				value={postData.text}
 				onChange={({target})=> commitData('text',target.value)} 

@@ -1,8 +1,8 @@
 import React from 'react'
 import moment from 'moment'
-import Pix from './../fonts/pix2.png'
+import Pix from '../fonts/no-user-avatar.png'
 import { toast } from 'react-toastify'
-import Pix1 from './../fonts/pix3.png'
+import Pix1 from '../fonts/no-user-avatar.png'
 import UseTheme from '../hooks/useTheme.jsx'
 import { useState,useRef,useEffect } from 'react'
 import ViewImage from '../modals/ViewImgModal.jsx'
@@ -128,20 +128,20 @@ export default function ProfileScreen() {
 	}
 
 	return (
-		<div className=" h-screen w-screen flex dark:bg-gray-700 bg-gray-100 justify-center overflow-hidden items-center">
+		<div className=" h-screen w-screen flex dark:bg-gray-700 bg-gray-50 justify-center overflow-hidden items-center">
 			<div className="transition-all relative h-full bg-white dark:bg-gray-800 w-full md:w-3/5">	
 				
 				{/* Nav Bar*/}
-				<div className="flex pl-1 justify-start h-14 items-center space-x-4 md:space-x-6 dark:bg-gray-600 bg-gray-200 w-full">
+				<div className="flex pl-1 justify-start h-14 items-center gap-x-4 md:gap-x-6 dark:bg-gray-600 bg-gray-100 w-full">
 					<ArrowBack className="dark:text-gray-50" onClick={()=>navigate('/')} size={25}/>
-					{<p className="cursor-pointer dark:text-gray-100">{isMe() ? user?.username : otherUser?.username }</p>}
+					{<p className="cursor-pointer dark:text-gray-100 capitalize">{isMe() ? user?.username : otherUser?.username }</p>}
 				</div>
 			<div ref={profileScroll} className={`overflow-y-auto h-full bg-transparent w-full ${scrollbar}`}>
 					
 					{/* CoverPhoto Profile Img / bio*/}
 					<div className="flex flex-col bg-transparent h-32 justify-center w-full items-center ">
 
-						<div style={{backgroundImage:`url(${otherUser?.coverPhoto || user.coverPhoto || Pix})`,backgroundSize:'cover'}} className="mt-1 relative bg-gray-50 w-4/5 md:w-4/6 rounded-tl-md rounded-tr-md md:rounded-tr-lg md:rounded-tl-lg h-28">
+						<div style={{backgroundImage:`url(${otherUser?.coverPhoto || user.coverPhoto || ''})`,backgroundSize:'cover'}} className="mt-1 relative bg-gray-50 w-4/5 md:w-4/6 rounded-tl-md rounded-tr-md md:rounded-tr-lg md:rounded-tl-lg h-28">
 							
 							{/*<span className="cursor-pointer absolute bottom-3 right-3 bg-black h-7 w-7 dark:bg-white dark:bg-black flex justify-center items-center text-xl rounded-full text-white">+</span>*/}
 							<span  onClick={()=>selectImg("Cover Photo")} className="absolute bottom-3 right-3 p-1 rounded-full bg-black dark:bg-gray-300"> { isMe() ? <Camera className="dark:text-black text-gray-100"/> : <h1 className="text-3xl text-white font-extrabold">--</h1>} </span>
@@ -176,16 +176,16 @@ export default function ProfileScreen() {
 
 						{/* User Info */}
 						<div className="cursor-default flex flex-col space-y-2 items-start text-xs pt-5 pl-3 w-full">
-							<div className="flex dark:text-gray-100 text-gray-900 items-center  space-x-3"> <Work/> <p>{ user?.job || "Not Set" }</p> </div>
-							<div className="flex dark:text-gray-100 text-gray-900 items-center space-x-3"> <School/> <p>{ user?.school || "Not Set" }</p> </div>
-							<div className="flex dark:text-gray-100 text-gray-900 items-center space-x-3"> <Location/> <p>{ user?.location || "Not Set" }</p> </div>
-							<div className="flex dark:text-gray-100 text-gray-900 items-center space-x-3"> <Joined/> <p>{moment(user?.createdAt).format('ll')}</p> </div>
+							<div className="flex dark:text-gray-100 text-gray-900 items-center  gap-x-4"> <Work className="text-lg text-gray-800 ml-1"/> <p>{ user?.job || "Not Set" }</p> </div>
+							<div className="flex dark:text-gray-100 text-gray-900 items-center gap-x-4"> <School className="text-2xl text-gray-800"/> <p>{ user?.school || "Not Set" }</p> </div>
+							<div className="flex dark:text-gray-100 text-gray-900 items-center gap-x-4"> <Location className="text-2xl text-gray-800"/> <p>{ user?.location || "Not Set" }</p> </div>
+							<div className="flex dark:text-gray-100 text-gray-900 items-center gap-x-4"> <Joined className="text-lg text-gray-800 ml-1"/> <p>{moment(user?.createdAt).format('ll')}</p> </div>
 						</div>
 				
 						{/* Friends / Memoriex */}
 						<div className="cursor-pointer flex w-full justify-between px-3 mt-3"> 
 							<div className="flex space-x-3">
-								<Friends className="dark:text-gray-100"/> 
+								<Friends className="dark:text-gray-100 text-xl text-gray-900"/> 
 								<p className="text-sm text-gray-900 dark:text-gray-100">Friends (229)</p> 
 							</div>
 							<span className="text-xs text-blue-500 dark:text-blue-600">see all</span>
@@ -244,7 +244,7 @@ export default function ProfileScreen() {
 			{/* Edit Profile */}	
 			{
 				openEditProfile ?
-					<div className='transition-opacity absolute top-0 left-0 bottom-0 right-0 '>
+					<div className='transition-opacity bg-white absolute top-0 left-0 bottom-0 right-0 '>
 						<EditProfile toggleEditProfile={toggleEditProfile}/>
 					</div> : ""	
 			}

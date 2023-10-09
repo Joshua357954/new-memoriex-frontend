@@ -45,9 +45,9 @@ export default function Search({onSearch}) {
 
 	return (
 		<div  className="flex justify-start absolute top-0 right-0 left-0 bottom-0 h-screen bg-transparent w-screen ">
-			<div className={`flex flex-col h-full dark:bg-gray-800 ${window.innerWidth<400 ? 'w-[100vw]':'w-[40vw]'} bg-gray-50 `}>	
+			<div className={`flex flex-col h-full dark:bg-gray-800 ${window.innerWidth<400 ? 'w-[100vw]':'w-[40vw]'} bg-white shadow-2xl `}>	
 				<div className="flex justify-between items-center px-1 bg-transparent dark:border-b-gray-100  border-b-2 border-b-gray-600 w-full">
-					{ window.innerWidth<450 ? <Back size={30} className="dark:text-gray-50 "  onClick={goBack}/> : <Close size={30} className="dark:text-gray-50 " onClick={goBack}/> }
+					{ window.innerWidth<450 ? <Back size={30} className="dark:text-gray-50 text-gray-300"  onClick={goBack}/> : <Close size={30} className="dark:text-gray-50 text-gray-500 hover:text-gray-700 " onClick={goBack}/> }
 					
 					<div className="flex  p-1 justify-between bg-transparent py-2 w-full items-center">
 						<input type='search' value={searchValue}  onChange={({target})=>setSearchValue(target.value)} name="search" 

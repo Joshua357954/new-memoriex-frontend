@@ -19,7 +19,7 @@ export default function EventsAroundYou({showEvents}) {
 
 	return (
 
-		<div className={`${scrollbar} mt-3 max-h-44 h-44 flex flex-col overflow-x-auto w-full`}>
+		<div className={`${scrollbar} bg-white mt-3 max-h-44 h-44 flex flex-col overflow-x-auto w-full`}>
 			
 			{/*<h1 className="">Around You</h1>*/}
 

@@ -139,9 +139,9 @@ export default function PostScreen() {
 			{ openSettings ?
 				<div className={`${absolute_full} bg-transparent w-screen h-screen flex justify-end `}>
 					<div className="bg-gray-100 dark:bg-gray-700 h-full w-full md:w-[45vw] lg:w-[30vw] h-full ">
-						<div className="w-full h-12 dark:bg-gray-700 bg-gray-300 flex  dark:text-gray-50 textjustify-start items-center space-x-4 px-1">
-							<ArrowBack onClick={()=>setOpenSettings(false)} size={25} className="dark:text-gray-50 text-gray-800" />
-							<p className="dark:text-gray-100 text-gray-900">Menu</p>
+						<div className="w-full h-14 dark:bg-gray-700 bg-gray-800 flex  dark:text-gray-50 textjustify-start items-center space-x-4 px-1">
+							<ArrowBack onClick={()=>setOpenSettings(false)} size={25} className="dark:text-gray-50 text-white" />
+							<p className="dark:text-gray-100 text-white">Menu</p>
 						</div>
 
 						<div className={`md:${scrollbar} h-[87vh] w-full overflow-y-auto`}>	

@@ -39,8 +39,8 @@ export default function Settings() {
 	const scrollbar = 'scrollbar scrollbar-thin dark:scrollbar-track-gray-600 cursor-pointer  dark:hover:scrollbar-thumb-gray-500 scrollbar-track-gray-50 hover:scrollbar-thumb-gray-400'
 
 	return (
-		<div className="h-full w-full dark:bg-gray-800 bg-gray-100 ">
-			 <div className={`flex flex-col w-full `}>	
+		<div className="h-full w-full dark:bg-gray-800 bg-gray-50 ">
+			 <div className={`flex flex-col w-full px-2`}>	
 					
 				<div className="w-full my-3">	
 					<MiniProfile/>
@@ -50,7 +50,7 @@ export default function Settings() {
 				{/*<div className={`transition-all ${Collapse['acctSet']? "max-h-45" : `max-h-${collBtnH}`} overflow-hidden w-full`}>*/}
 				<div className={`transition-all focus:outline-none  ${Collapse['acctSet']? "max-h-45" : `h-${collBtnH}`} overflow-hidden w-full`}>
 					<div onClick={()=>toggleCollapse('acctSet')} className={`cursor-pointer h-${collBtnH} space-x-2 px-2 py-1 dark:bg-gray-400 bg-gray-200 flex items-center dark:text-gray-50 text-gray-800 rounded-sm`}>
-						<Acct size={23}className="text-gray-900" /> <p className="text-sm">Account Settings</p>
+						<Acct size={23}className="text-green-400" /> <p className="text-sm">Account Settings</p>
 					</div>
   
 					<div className="w-full h-full ">
@@ -61,27 +61,26 @@ export default function Settings() {
 				</div>
 
 			{/* Others */}
-				<div className="focus:outline-none flex flex-col space-y-3 my-4 px-2 dark:text-gray-50" >	
+				<div className="focus:outline-none flex flex-col space-y-3 my-4 px-2g dark:mm dark:text-gray-50" >	
 					
-					<div onClick={logOut}className="mt-3 flex space-x-4" ><p>Switch Account</p> <Exchange/></div>
-
+					<div onClick={logOut}className="mt-3 flex space-x-4 items-center" ><p>Switch Account</p> <Exchange className="text-red-500"/></div>
 
 				</div>
 
 			{/* Lock Chat */}
 				<div className={`transition-all  ${Collapse['lockChat']? "max-h-45" : `h-${collBtnH}`} overflow-hidden w-full`}>
+					
 					<div onClick={()=>toggleCollapse('lockChat')} className={`cursor-pointer h-${collBtnH} space-x-4 px-2 py-1 dark:bg-gray-400 bg-gray-200 flex items-center dark:text-gray-50 text-gray-800 rounded-sm`}>
-						<Lock size={23}className="text-gray-900" /> <p className="text-sm">Lock Chat</p>
+						<Lock size={23}className="text-sky-400" /> <p className="text-sm">Lock Chat</p>
 					</div>
 
 					<div className="w-full h-full ">
-
 						<LockChat/>
+					</div>
 
-					</div>		
 				</div>
 
-				<div className="px-2 py-3">	
+				<div className=" py-3">	
 					<Theme />
 				</div>
 				

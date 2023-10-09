@@ -16,7 +16,7 @@ export default function YourEvents({showEvents}) {
 	},[])
 
 	return (
-	<div className={`${scrollbar} max-h-44 h-44 flex overflow-x-auto w-full`}>
+	<div className={`${scrollbar} bg-white max-h-44 h-44 flex overflow-x-auto w-full`}>
 		{ UserEvents[0] ? 
 			UserEvents?.map((event,idx) => { 
 				return <EventCard key={idx} action={showEvents} title={event.name} imgUrl={event.img} location={event.venue} ownerId={event.UserId} date={event.dateTime} discription={event.discription} eventId={event.id} loggedUser={user?.id}/>

@@ -72,51 +72,51 @@ export default function EditProfile({toggleEditProfile}) {
 
 
 	return (
-		<div className="h-full bg-gray-300 dark:bg-gray-600">
-			<div className="bg-gray-100 w-full dark:bg-gray-800 flex dark:text-white border-b-2 border-gray-200 justify-between px-1 h-[10%] items-center ">	
-				<GoBackIcon size={20} onClick={goBack}  className="hidden md:block " />
+		<div className="h-full w-full bg-gray-50 dark:bg-gray-600">
+			<div className="bg-gray-50 w-full dark:bg-gray-800 flex dark:text-white justify-between px-1 h-[10%] items-center ">	
+				<GoBackIcon size={24} onClick={goBack}  className="hidden md:block " />
 				<Close size={20} onClick={()=>toggleEditProfile(false)} className="md:hidden " />
-				<h1>Edit Profile</h1>
+				<h1 className='font-semibold'>Edit Profile</h1>
 				<p>{"  "}</p>
 			</div>
 
 			<div className="flex flex-col  justify-evenly ml-10 h-full w-1/3 bg-transparent">
 				{/*Job/school/location/bio*/}
 				<label htmlFor="bio"  className="flex flex-col">
-					Bio :
+					<p className="font-bold">Bio :</p>
 					<textarea 
 					 value={profile.bio}
 					 onChange={(val)=> changeIt(val) }
-					 name="bio" className="resize-none outline-gray-100 rounded-sm focus:outline-gray-300 border-none px-1">
+					 name="bio" className="bg-gray-50 border-2 border-gray-300 resize-none rounded focus:outline-gray-300  px-1">
 
 					</textarea>
 				</label>	
 
 				<label htmlFor="Job" className="flex flex-col">
-					Job :
+					<p className="font-bold">Job :</p>
 					<input 
 					 value={profile.job}
 					 onChange={(val)=> changeIt(val) }
-					 name='job' type="text" className="rounded-sm focus:outline-gray-300" />
+					 name='job' type="text" className="bg-gray-50 border-2 border-gray-300 rounded focus:outline-gray-300" />
 				</label>
 
 				<label htmlFor="School"  className="flex flex-col">
-					School :
+					<p className="font-bold"> School :</p>
 					<input
 					 value={profile.school}
 					 onChange={(val)=> changeIt(val) }
-					 name='school' type="text" className="rounded-sm focus:outline-gray-300" />
+					 name='school' type="text" className="bg-gray-50 border-2 border-gray-300 rounded focus:outline-gray-300" />
 				</label>
 
 				<label htmlFor="Location" className="flex flex-col">
-					Location :
+					<p className="font-bold">Location :</p>
 					<input
 					 value={profile.location}
 					 onChange={(val)=> changeIt(val) }
-					 name='location' type="location" className="rounded-sm focus:outline-gray-300" />
+					 name='location' type="location" className="bg-gray-50 border-2 border-gray-300 rounded focus:outline-gray-300" />
 				</label>
 
-				<button className={`px-2 py-1 absolute top-12 right-2 text-gray-50 rounded-sm shadow-md ${profile != fakeProfile ? 'bg-red-500' : "bg-blue-400" }`} onClick={saveNewChange} >Save Changes</button>
+				<button className={`px-2 py-2 absolute top-14 right-2 text-gray-50 font-semibold rounded shadow-md ${profile != fakeProfile ? 'bg-red-500' : "bg-sky-400" }`} onClick={saveNewChange} >Save Changes</button>
 
 			</div>	
 

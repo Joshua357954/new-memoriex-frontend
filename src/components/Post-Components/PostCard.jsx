@@ -1,5 +1,5 @@
 import React from 'react'
-import Pix0 from '../../fonts/pix1.png'
+import Pix0 from '../../fonts/no-user-avatar.png'
 import PPix from '../../fonts/pix3.png'
 import { useNavigate } from 'react-router-dom' 
 import { FcLike as Love } from 'react-icons/fc'
@@ -21,7 +21,7 @@ export default function PostCard({FullView,PCRef,toggleViewPost,
 							PostId, userId,text,postUserId, comments,
 								imgUrl ,time,feeling ,link, reactions }) {
 
-	console.log(`\n\n\n\n This is the reactions : ${reactions}`)
+	// console.log(`\n\n\n\n This is the reactions : ${reactions}`)
 	const navigate = useNavigate()
 	const [ownerName,setOwnerName] = useState("")
 	const { userPost } = useSelector( state => state.post)
@@ -131,7 +131,7 @@ export default function PostCard({FullView,PCRef,toggleViewPost,
 				</div>
 
 				<div className="cursor-default ml-2">
-					<p onClick={openUserProfile} className="flex font-light"><p className="text-md capitalize font-bold">{ownerName}</p> &nbsp;{getFeeling(feeling)}</p>
+					<p onClick={openUserProfile} className="flex font-light"><b className="text-md capitalize font-bold">{ownerName}</b> &nbsp;{getFeeling(feeling)}</p>
 					<p className="text-xs font-extralight">12 Jun 2022</p>
 				</div>
 

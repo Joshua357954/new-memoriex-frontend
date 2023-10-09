@@ -51,6 +51,9 @@ export default function ViewStoryBox({toggleViewStoryBox}) {
 
 	function deleteStory(sId) {
 		console.log("Story To Delete",sId)
+		const sure = confirm("Are you sure you want to delete this story ?")
+		
+		if (!sure) return 
 		// get story id & userId
 
 		// delete story from datbase

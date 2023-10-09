@@ -75,18 +75,18 @@ export default function AddEvent({closeAddEvent}) {
 	
 
 	return (
-		<div className="absolute flex justify-center top-0 left-0 right-0 bottom-0 bg-gray-300 dark:bg-gray-800">
-			<div className="w-full select-none h-full flex flex-col justify-start items-center dark:bg-gray-700 bg-gray-200 md:w-2/3 lg:w-3/6">	
+		<div className="absolute flex justify-center top-0 left-0 right-0 bottom-0 bg-gray-50 dark:bg-gray-800">
+			<div className="w-full select-none h-full flex flex-col justify-start items-center dark:bg-gray-800 bg-gray-50 md:w-2/3 lg:w-3/6">	
 
 				{/* Navigation */}
-				<div className="flex shadow-md justify-between h-14 w-full items-center px-2">
+				<div className="flex shadow-sm justify-between h-14 w-full items-center px-2">
 					
 					{ photoImg ? <div className="relative py-2 px-3 cursor-pointer bg-gray-100 flex justify-center items-center rounded-md font-[500] text-xl ">
 						<Plus /> <input type="file" className='absolute top-3 focus:outline-none right-2  w-6 opacity-0' onChange={selectImage}/>
 					</div> : <h1>{"  "}</h1> }
 			
-				<h1 className="dark:text-gray-50 flex space-x-2 items-center">Add New Event <AddEventIcon className="pl-1 text-2xl  dark:gray-gray-200" /> </h1>
-				<Close onClick={closeIt} className="px-2 text-4xl rounded-md dark:bg-gray-500 dark:text-white bg-gray-300 shadow-sm hover:shadow-md"/> 
+				<h1 className="dark:text-gray-50 flex space-x-2 items-center">Add New Event <AddEventIcon className="pl-1 text-2xl text-sky-400  dark:text-sky-200" /> </h1>
+				<Close onClick={closeIt} className="px-2 text-4xl rounded-md dark:bg-gray-500 dark:text-white bg-gray-100 shadow-sm hover:shadow-md"/> 
 				
 				</div>
 

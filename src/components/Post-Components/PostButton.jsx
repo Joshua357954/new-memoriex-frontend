@@ -1,5 +1,5 @@
 import React from 'react'
-import Pix0 from '../../fonts/pix1.png'
+import Pix0 from '../../fonts/no-user-avatar.png'
 import {useSelector} from "react-redux"
 import { useNavigate } from "react-router-dom"
 import {IoMdImages as Image1} from 'react-icons/io'

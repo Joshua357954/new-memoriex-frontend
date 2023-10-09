@@ -219,10 +219,10 @@ export default function SettingsEntryCard1() {
 			{ loading ? <BeatLoader color="#d9d9d9"  size={18}/>  : "" }
 
 			<button disabled={loading } onClick={updateUsername} 
-			className="bg-yellow-400 text-center w-3/4 py-1 rounded-sm flex justify-center items-center">Change UserName</button>
+			className="bg-white text-center w-3/4 py-1 rounded flex justify-center items-center">Change UserName</button>
 
 			<button disabled={loading} onClick={updatePassword} 
-			className="bg-blue-400 text-center w-3/4 py-1 rounded-sm flex justify-center items-center">Change Password</button>
+			className="bg-red-100 text-center w-3/4 py-1 rounded flex justify-center items-center">Change Password</button>
 
 			{/*<button onClick={makeChanges} className={`bg-blue-400 dark:bg-blue-300  dark:text-gray-900 text-center py-2 w-full`}>Save Changes</button>*/}
 		</div>
