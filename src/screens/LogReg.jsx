@@ -80,7 +80,7 @@ export default function LogReg() {
 
 	return (
 
-		<div className="logreg-form min-h-screen flex flex-col border-green-300 dark:bg-gray-900 mt-3 px-4">
+		<div className="logreg-form min-h-screen flex flex-col border-green-300 dark:bg-gray-900 mt-3 px-3">
 
 			<h1 className="font-black mt-4 mx-auto w-[350px] text-5xl text-black dark:text-gray-50">Memoriex</h1>
  
