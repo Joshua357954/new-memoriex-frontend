@@ -89,7 +89,7 @@
 
 
 .logreg-form form input{
-	@apply mb-10 px-7 mx-auto py-4 md:w-[350px] w-[250px] bg-white border-2 rounded border-gray-300 focus:outline-none 
+	@apply mb-10 px-7 mx-auto py-4 md:w-[350px] w-full bg-white border-2 rounded border-gray-300 focus:outline-none 
 }
 
 .logreg-Btn{

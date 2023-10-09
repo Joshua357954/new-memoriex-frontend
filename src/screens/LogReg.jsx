@@ -80,7 +80,7 @@ export default function LogReg() {
 
 	return (
 
-		<div className="logreg-form min-h-screen flex flex-col border-green-300 dark:bg-gray-900">
+		<div className="logreg-form min-h-screen flex flex-col border-green-300 dark:bg-gray-900 mt-3 px-2">
 
 			<h1 className="font-black mt-4 mx-auto w-[350px] text-5xl text-gray-700 dark:text-gray-50">Memoriex</h1>
  
@@ -133,7 +133,7 @@ export default function LogReg() {
 				/>
 				
 
-						<button className=" bg-sky-300 py-4 text-xl font-bold rounded transition-all w-[350px]" type="submit"> { isLoading 
+						<button className=" bg-sky-400 py-4 text-xl font-bold rounded transition-all w-full md:w-[350px]" type="submit"> { isLoading 
 							? (<div className="flex gap-x-2 items-center mx-auto w-full justify-center">
 									<p>{!loginState ? "Login" : "Register"} </p>
 									<div className="spinner"></div>
