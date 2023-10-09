@@ -80,7 +80,7 @@ export default function LogReg() {
 
 	return (
 
-		<div className="logreg-form min-h-screen flex flex-col border-green-300 dark:bg-gray-900 mt-3 px-3">
+		<div className="logreg-form min-h-screen flex flex-col border-green-300 dark:bg-gray-900 mt-3 px-2">
 
 			<h1 className="font-black mt-4 mx-auto w-[350px] text-5xl text-black dark:text-gray-50">Memoriex</h1>
  
@@ -93,7 +93,7 @@ export default function LogReg() {
 			</div>*/}
 
 			<div className="bg-red-00 w-full md:w-[350px] flex flex-col gap-y-2 items-start mx-auto">
-				<h2 className="mt-8 text-center font-semibold text-2xl text-gray-700">Welcome back to memoriex </h2>
+				<h2 className="mt-8 text-center font-semibold text-xl text-gray-700">Welcome back to memoriex </h2>
 				<div className="flex gap-x-2 items-center "> 
 					<p className="font-light">{!loginState ? 'New here' : 'Already have an account'} ?</p> <a onClick={() => setLoginState(prev => !prev)} className="text-sky-500 underline w-auto">
 						{!loginState ? 'Create an account' : 'Login'}
