@@ -63,7 +63,7 @@ export default function Navbar({changeScreen,onSettings,onSearch}) {
 	return (
 		<div className={`${hideNav?'hidden':''} relative dark:bg-gray-900 bg-white md:min-h-[60px] min-h-[70px] shadow-lg my-auto w-full grid grid-cols-6 grid-rows-1`}>
 			
-			<div className="lg:col-span-1 md:col-span-2 md:flex md:justify-start md:items-center text-xl text-gray-700 font-extrabold pl-2 absolute top-1 md:static dark:text-white "><p className="text-xl md:hidden">Memoriex</p> <p className="text-xl  hidden md:block">memoriex</p> </div>
+			<div className="lg:col-span-1 md:col-span-2 md:flex md:justify-start md:items-center text-xl text-gray-700 font-extrabold pl-2 absolute top-1 md:static dark:text-white capitalize "><p className="text-xl md:hidden">Memoriex</p> <p className="text-xl  hidden md:block">memoriex</p> </div>
 	
 			<div className="col-span-6 md:col-span-4 h-full flex w-full justify-between md:justify-evenly px-2 items-end  ">
 				{/* Load HomePage Icons */}
